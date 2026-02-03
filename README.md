@@ -1,4 +1,4 @@
-# Classic 4K Portfolio
+# Classic Portfolio
 
 ## Overview
 
@@ -70,6 +70,14 @@ Preferred communication style: Simple, everyday language.
 - **Google Fonts** - Lato and Playfair Display font families (loaded via CDN)
 - **Tailwind CSS** - Loaded via CDN (cdn.tailwindcss.com)
 - **Picsum Photos** - Placeholder images for development
+---
+  
+### Photos of the project 
 
-### API Integration
-- **Gemini API** - Environment variable configured (`GEMINI_API_KEY`) but not actively used in current codebase. Appears to be prepared for future AI features.
+
+![image1](https://i.imgur.com/Pu9DTMU.jpeg)
+![image4](https://i.imgur.com/FNnRD7w.jpeg)
+![image5](https://i.imgur.com/kYMmDKF.jpeg)
+
+
+---
