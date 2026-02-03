@@ -10,7 +10,7 @@ interface ScriptModalProps {
   onClose: () => void;
 }
 
-// Fix: Cast motion components to any to resolve TypeScript errors
+
 const MotionDiv = motion.div as any;
 
 const ScriptModal: React.FC<ScriptModalProps> = ({ script, isOpen, onClose }) => {
