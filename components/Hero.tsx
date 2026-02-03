@@ -3,7 +3,6 @@ import Section from './Section';
 import { ArrowDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-// Fix: Cast motion components to any to resolve TypeScript errors where props like 'initial' are not recognized
 const MotionP = motion.p as any;
 const MotionH1 = motion.h1 as any;
 const MotionDiv = motion.div as any;
