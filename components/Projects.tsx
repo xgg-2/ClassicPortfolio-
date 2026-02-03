@@ -8,7 +8,6 @@ import { Project, Script } from '../types';
 import { useSound } from '../hooks/useSound';
 import { motion, LayoutGroup, AnimatePresence } from 'framer-motion';
 
-// Fix: Cast motion components
 const MotionDiv = motion.div as any;
 const MotionButton = motion.button as any;
 
@@ -24,12 +23,10 @@ const Projects: React.FC = () => {
   const filteredProjects = useMemo(() => {
     let currentProjects = PROJECTS;
 
-    // Category Filter
     if (activeCategory !== 'All') {
       currentProjects = currentProjects.filter(p => p.category === activeCategory);
     }
 
-    // Search Filter
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
       currentProjects = currentProjects.filter(p => 
@@ -61,8 +58,6 @@ const Projects: React.FC = () => {
   const handleCategoryChange = (cat: string) => {
     playClick();
     setActiveCategory(cat);
-    // Optional: Clear search when switching categories if desired, 
-    // but keeping it allows searching across tabs more easily if user switches back.
   };
 
   const handleProjectClick = (project: Project) => {
@@ -101,10 +96,8 @@ const Projects: React.FC = () => {
           </div>
         </div>
 
-        {/* Controls: Categories & Search */}
         <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between gap-8 mb-16">
           
-          {/* Category Filter */}
           <div className="flex flex-wrap gap-2 md:gap-4 overflow-x-auto pb-4 md:pb-0 no-scrollbar">
             {CATEGORIES.map((cat) => (
               <MotionButton
@@ -128,7 +121,6 @@ const Projects: React.FC = () => {
             ))}
           </div>
 
-          {/* Search Input */}
           <div className="relative w-full lg:w-72 group">
             <div className="absolute inset-y-0 left-0 flex items-center pl-0 pointer-events-none text-stone-400 group-focus-within:text-ink transition-colors">
               <Search size={18} />
@@ -156,7 +148,6 @@ const Projects: React.FC = () => {
         <MotionDiv layout className="max-w-screen-2xl mx-auto min-h-[400px]">
           <AnimatePresence mode="wait">
             {activeCategory === 'Scripts' ? (
-              /* Scripts Layout */
               <MotionDiv 
                 key="scripts-grid"
                 layout
@@ -221,7 +212,6 @@ const Projects: React.FC = () => {
                 )}
               </MotionDiv>
             ) : (
-              /* Projects Layout */
               <MotionDiv 
                 key="projects-grid"
                 layout
@@ -242,7 +232,6 @@ const Projects: React.FC = () => {
                       onClick={() => handleProjectClick(project)}
                       onMouseEnter={playHover}
                     >
-                      {/* Image Card */}
                       <div className="relative overflow-hidden mb-6 bg-stone-200 aspect-[16/10] shadow-sm">
                         <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/10 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
                             <div className="bg-paper text-ink px-5 py-2 font-serif italic text-lg flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 shadow-lg">
@@ -263,7 +252,6 @@ const Projects: React.FC = () => {
                         />
                       </div>
                       
-                      {/* Content */}
                       <div className="flex-1 flex flex-col border-t border-stone-200 pt-4">
                           <div className="flex items-center justify-between mb-2">
                             <span className="text-[10px] font-bold uppercase tracking-widest text-stone-400">
