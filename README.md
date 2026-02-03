@@ -79,7 +79,7 @@ To set up and run the Classic Portfolio project locally, follow these steps:
 
 1. **Install dependencies**  
    Open your terminal in the project directory and run:
-   ```bash
+```bash
    npm install
    ```
 
@@ -94,7 +94,6 @@ To start the development server with live reload:
 ```bash
 npm run dev
 ```
-
 or
 
 ```bash
@@ -110,7 +109,6 @@ To create a production-ready build:
 ```bash
 npm run build
 ```
-
 or
 
 ```bash
@@ -119,7 +117,7 @@ yarn build
 
 ---
 
-###Photos of the project
+### Photos of the project
 
   
 
