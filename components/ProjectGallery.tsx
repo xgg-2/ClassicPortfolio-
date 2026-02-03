@@ -10,7 +10,7 @@ interface ProjectGalleryProps {
   onClose: () => void;
 }
 
-// Fix: Cast motion components to any to resolve TypeScript errors where props like 'initial' are not recognized
+
 const MotionDiv = motion.div as any;
 const MotionImg = motion.img as any;
 
@@ -18,7 +18,7 @@ const ProjectGallery: React.FC<ProjectGalleryProps> = ({ project, isOpen, onClos
   const [currentIndex, setCurrentIndex] = useState(0);
   const { playHover, playClick } = useSound();
 
-  // Reset index when project changes
+  
   React.useEffect(() => {
     if (isOpen) setCurrentIndex(0);
   }, [isOpen, project]);
