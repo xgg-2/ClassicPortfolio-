@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Fix: Cast motion component to any to resolve TypeScript errors where props like 'initial' are not recognized
 const MotionSection = motion.section as any;
 
 interface SectionProps {
