@@ -70,14 +70,60 @@ Preferred communication style: Simple, everyday language.
 - **Google Fonts** - Lato and Playfair Display font families (loaded via CDN)
 - **Tailwind CSS** - Loaded via CDN (cdn.tailwindcss.com)
 - **Picsum Photos** - Placeholder images for development
----
-  
-### Photos of the project 
 
+---
+
+## Running Instructions
+
+To set up and run the Classic Portfolio project locally, follow these steps:
+
+1. **Install dependencies**  
+   Open your terminal in the project directory and run:
+   ```bash
+   npm install
+   ```
+
+or if you use Yarn : 
+```bash
+yarn
+```
+
+2. Run development server
+To start the development server with live reload:
+
+```bash
+npm run dev
+```
+
+or
+
+```bash
+yarn dev
+```
+
+This will launch the app at http://localhost:3000.
+
+
+3. Build for production
+To create a production-ready build:
+
+```bash
+npm run build
+```
+
+or
+
+```bash
+yarn build
+```
+
+---
+
+###Photos of the project
+
+  
 
 ![image1](https://i.imgur.com/Pu9DTMU.jpeg)
 ![image4](https://i.imgur.com/FNnRD7w.jpeg)
 ![image5](https://i.imgur.com/kYMmDKF.jpeg)
-
-
 ---
