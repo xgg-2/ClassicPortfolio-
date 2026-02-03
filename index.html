@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youcef (xgg.2) - Senior Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Lato', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              ink: '#1a1918',
+              paper: '#f5f4f0',
+              accent: '#333332',
+              muted: '#8a8885'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f5f4f0;
+        color: #1a1918;
+      }
+      /* Custom selection color for that traditional feel */
+      ::selection {
+        background: #1a1918;
+        color: #f5f4f0;
+      }
+      /* Hide scrollbar for gallery but keep functionality */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      
+      /* Global Scroll Padding to prevent Fixed Header Overlap */
+      html {
+        scroll-padding-top: 100px; /* Safe zone for Mobile (Header is ~80px) */
+      }
+      @media (min-width: 768px) {
+        html {
+          scroll-padding-top: 140px; /* Safe zone for Desktop (Header is ~112px) */
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "lucide-react": "https://esm.sh/lucide-react@0.330.0?external=react",
+    "framer-motion": "https://esm.sh/framer-motion@11.0.3?external=react,react-dom"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
